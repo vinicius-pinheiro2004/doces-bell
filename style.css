@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+}
+
+nav {
+    position: absolute;
+    bottom: 10px; /* Ajuste a posição do menu de navegação */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1; /* Garante que o menu fique acima da imagem */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000; /* Altere a cor para melhor legibilidade sobre o fundo */
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos se movam para a próxima linha, se necessário */
+    justify-content: center; /* Centraliza os produtos */
+    margin-top: 20px; /* Espaço acima dos produtos */
+}
+
+.produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave */
+    width: 200px; /* Define uma largura fixa para cada produto */
+    text-align: center; /* Centraliza o texto dentro do produto */
+}
+
+.produto:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efeito de sombra ao passar o mouse */
+}
+
+.imagem-produto {
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+button.adicionar {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.adicionar:hover {
+    background: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
